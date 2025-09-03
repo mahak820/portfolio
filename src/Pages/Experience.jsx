@@ -2,6 +2,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import React, { useState, useEffect } from 'react';
 import { GridBeam } from "../ui/GridBeam";
+import { useNavigate } from "react-router-dom";
 
 const Experience = () => {
   const [currentInternship, setCurrentInternship] = useState(0);
@@ -10,23 +11,11 @@ const Experience = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalImage, setModalImage] = useState({ src: '', alt: '', title: '' });
 
-  const handleNavigation = (route) => {
-    try {
-      console.log('Navigating to:', route);
-      setTimeout(() => {
-        if (route.startsWith('/')) {
-          const fullUrl = window.location.origin + route;
-          window.location.href = fullUrl;
-        } else {
-          window.location.href = route;
-        }
-      }, 50);
-    } catch (error) {
-      console.error('Navigation error:', error);
-      window.open(route, '_self');
-    }
-  };
+  const navigate = useNavigate()
 
+  const handleNavigation = (route) => {
+    navigate(route)
+  };
   const internships = [
     {
       id: 1,

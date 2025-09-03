@@ -4,6 +4,7 @@ import React from 'react';
 // Remove this import - we'll use a more flexible approach
 import Spline from '@splinetool/react-spline';
 import { GridBeam } from "../ui/GridBeam";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
   // Test function to verify navigation is working
@@ -47,49 +48,11 @@ const Hero = () => {
   };
 
   // Enhanced navigation handler with better error handling
+const navigate = useNavigate()
+
   const handleNavigation = (route) => {
-    try {
-     
-      
-      // Add a small delay to ensure the click is registered
-      setTimeout(() => {
-        
-        // Option 1: Simple page navigation (works everywhere)
-        if (route.startsWith('/')) {
-          // For relative routes, construct full URL
-          const fullUrl = window.location.origin + route;
-          // console.log('Navigating to full URL:', fullUrl);
-          window.location.href = fullUrl;
-        } else {
-          // For absolute URLs
-          // console.log('Navigating to absolute URL:', route);
-          window.location.href = route;
-        }
-      }, 50);
-      
-      // Option 2: React Router (uncomment if using react-router-dom and wrapped in <Router>)
-      // import { useNavigate } from 'react-router-dom';
-      // const navigate = useNavigate();
-      // navigate(route);
-      
-      // Option 3: Next.js (uncomment if using Next.js)
-      // import { useRouter } from 'next/router';
-      // const router = useRouter();
-      // router.push(route);
-    } catch (error) {
-      console.error('Navigation error:', error);
-      // console.log('Trying fallback navigation method...');
-      
-      // Fallback navigation methods
-      try {
-        window.open(route, '_self');
-      } catch (fallbackError) {
-        console.error('Fallback navigation also failed:', fallbackError);
-        // Last resort - show alert
-        alert(`Navigation to ${route} failed. Please check the console for details.`);
-      }
-    }
-  };
+    navigate(route)
+  };
 
   const navButtons = [
     { 

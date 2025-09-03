@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import React, { useState } from 'react';
 import { GridBeam } from "../ui/GridBeam";
+import { useNavigate } from "react-router-dom";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -13,22 +14,11 @@ const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
 
+const navigate = useNavigate()
+
   const handleNavigation = (route) => {
-    try {
-      console.log('Navigating to:', route);
-      setTimeout(() => {
-        if (route.startsWith('/')) {
-          const fullUrl = window.location.origin + route;
-          window.location.href = fullUrl;
-        } else {
-          window.location.href = route;
-        }
-      }, 50);
-    } catch (error) {
-      console.error('Navigation error:', error);
-      window.open(route, '_self');
-    }
-  };
+    navigate(route)
+  };
 
   const handleInputChange = (e) => {
     setFormData({

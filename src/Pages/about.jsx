@@ -3,24 +3,14 @@ import { motion } from "framer-motion";
 import React from 'react';
 import { GridBeam } from "../ui/GridBeam";
 import ProfileCard from "../components/ProfileCard";
+import { useNavigate } from "react-router-dom";
 
 const About = () => {
+  const navigate = useNavigate()
+
   const handleNavigation = (route) => {
-    try {
-      console.log('Navigating to:', route);
-      setTimeout(() => {
-        if (route.startsWith('/')) {
-          const fullUrl = window.location.origin + route;
-          window.location.href = fullUrl;
-        } else {
-          window.location.href = route;
-        }
-      }, 50);
-    } catch (error) {
-      console.error('Navigation error:', error);
-      window.open(route, '_self');
-    }
-  };
+    navigate(route)
+  };
 
   return (
     <div className="relative min-h-screen w-full bg-[#141618] overflow-hidden">

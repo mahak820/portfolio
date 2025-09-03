@@ -3,24 +3,14 @@ import { motion } from "framer-motion";
 import React from 'react';
 import { GridBeam } from "../ui/GridBeam";
 import { Project3DCard } from "../components/Project3DCard"; // Import the 3D card
+import { useNavigate } from "react-router-dom";
 
 const Projects = () => {
+ const navigate = useNavigate()
+
   const handleNavigation = (route) => {
-    try {
-      console.log('Navigating to:', route);
-      setTimeout(() => {
-        if (route.startsWith('/')) {
-          const fullUrl = window.location.origin + route;
-          window.location.href = fullUrl;
-        } else {
-          window.location.href = route;
-        }
-      }, 50);
-    } catch (error) {
-      console.error('Navigation error:', error);
-      window.open(route, '_self');
-    }
-  };
+    navigate(route)
+  };
 
   const projects = [
     {
