@@ -29,7 +29,7 @@ const Experience = () => {
     },
     {
       id: 2,
-      title: "Web Developer Intern",
+      title: "Student Intern",
       company: "E-Skills Web LLP",
       duration: "Aug 2024 - Feb 2025",
       description: "As a MERN Stack Development Intern at E-Skills, Indore, I obtained practical experience in developing full-stack web applications withMongoDB, Express.js, React.js, and Node.js. Creating and integrating REST APIs, managing databases, putting authentication featuresin place, and designing responsive user interfaces were all part of my job. Additionally, I worked in an agile environment with my team,which enhanced my comprehension of full-stack development overall and helped me with problem-solving, debugging, and deployment.",
@@ -70,26 +70,26 @@ const Experience = () => {
       certificateImage: "/images/OdooMahak.jpg",
       color: "pink"
     },
-    {
-      id: 3,
-      title: "Hackathon Winner",
-      organization: "CodeCrush 2023",
-      date: "October 2023",
-      description: "Led a team of 4 developers to create an innovative solution for sustainable transportation, securing 1st position among 200+ participants. Developed a full-stack application in 48 hours.",
-      category: "Competition",
-      certificateImage: "/api/placeholder/500/350",
-      color: "cyan"
-    },
-    {
-      id: 4,
-      title: "AWS Cloud Practitioner",
-      organization: "Amazon Web Services",
-      date: "August 2023",
-      description: "Achieved AWS Cloud Practitioner certification demonstrating foundational cloud computing knowledge and skills. Gained expertise in AWS core services, security, and architecture principles.",
-      category: "Certification",
-      certificateImage: "/api/placeholder/500/350",
-      color: "emerald"
-    }
+    // {
+    //   id: 3,
+    //   title: "Hackathon Winner",
+    //   organization: "CodeCrush 2023",
+    //   date: "October 2023",
+    //   description: "Led a team of 4 developers to create an innovative solution for sustainable transportation, securing 1st position among 200+ participants. Developed a full-stack application in 48 hours.",
+    //   category: "Competition",
+    //   certificateImage: "/api/placeholder/500/350",
+    //   color: "cyan"
+    // },
+    // {
+    //   id: 4,
+    //   title: "AWS Cloud Practitioner",
+    //   organization: "Amazon Web Services",
+    //   date: "August 2023",
+    //   description: "Achieved AWS Cloud Practitioner certification demonstrating foundational cloud computing knowledge and skills. Gained expertise in AWS core services, security, and architecture principles.",
+    //   category: "Certification",
+    //   certificateImage: "/api/placeholder/500/350",
+    //   color: "emerald"
+    // }
   ];
 
   // Auto-play functionality

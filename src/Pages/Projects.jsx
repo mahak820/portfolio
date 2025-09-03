@@ -20,7 +20,7 @@ const Projects = () => {
       image: '/images/Expenso.png', // Replace with your actual image paths
       technologies: ["React", "Node.js", "MongoDB", "Gemeni API" , "Chart.js"],
       githubUrl: "https://github.com/mahak820/expenspo_moneyTracker.git",
-      liveUrl: "https://github.com/mahak820/expenspo_moneyTracker.git",
+      liveUrl: "https://expenspo-moneytracker.onrender.com/",
       category: "Full Stack"
     },
     {
@@ -47,8 +47,8 @@ const Projects = () => {
       id: 4,
       title: "QuickCar - A Car Rental Application",
       description: "Modern chat application with real-time messaging, file sharing, emoji reactions, and dark/light theme support. Built with Socket.io.",
-      image: "/api/placeholder/400/250",
-      technologies: ["Socket.io", "React", "Express", "Redis"],
+      image: "/images/quickcar.png",
+      technologies: ["React.js", "Node.js", "Express", "Redux" , "TailwindCSS"],
       githubUrl: "https://github.com/yourusername/chat-app",
       liveUrl: "https://chat-app-demo.vercel.app",
       category: "Full Stack"
@@ -67,8 +67,8 @@ const Projects = () => {
       id: 6,
       title: "News App",
       description: "Secure voting system built on blockchain technology ensuring transparency, security, and immutability. Features smart contracts and modern web interface.",
-      image: "/api/placeholder/400/250",
-      technologies: ["Solidity", "Web3.js", "React", "Ethereum"],
+      image: "/images/newsapp.jpg",
+      technologies: ["React.js", "TailwindCSS", "Redux", "JavaScript"],
       githubUrl: "https://github.com/mahak820/news-app.git",
       liveUrl: "https://github.com/mahak820/news-app.git",
       category: "Frontend"

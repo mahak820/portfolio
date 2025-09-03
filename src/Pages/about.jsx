@@ -95,21 +95,16 @@ const About = () => {
               >
                 <div className="space-y-4">
                   <h2 className="text-2xl md:text-3xl font-bold text-white">
-                    Hi, I'm a Creative Developer
+                    Hi, I'm a Full-Stack Developer
                   </h2>
                   
                   <div className="space-y-4 text-gray-300 leading-relaxed">
                     <p>
-                      I'm passionate about creating digital experiences that bridge the gap between 
-                      design and technology. With a strong foundation in modern web development, 
-                      I specialize in building interactive applications that captivate users.
+                      I’m Mahak Tuwani, a Full Stack Developer specialized in the MERN stack (MongoDB, Express.js, React.js, Node.js). I love turning ideas into scalable, high-performance web applications with clean, efficient, and maintainable code.
                     </p>
                     
                     <p>
-                      My journey began with curiosity about how websites work, which led me to 
-                      explore frontend frameworks, 3D web technologies, and user interface design. 
-                      I believe that great code should not only function flawlessly but also 
-                      create memorable experiences.
+                      With strong command over both frontend and backend development, I can design smooth user interfaces, build robust APIs, and manage databases with equal proficiency. I’m also skilled in creating fully responsive UIs and optimizing applications for speed and performance.
                     </p>
                     
                     <p>
@@ -130,7 +125,7 @@ const About = () => {
                     </div>
                     <div className="flex items-center space-x-3">
                       <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
-                      <span className="text-gray-300">3D Web Experiences</span>
+                      <span className="text-gray-300">Backend Development</span>
                     </div>
                     <div className="flex items-center space-x-3">
                       <div className="w-2 h-2 bg-indigo-400 rounded-full"></div>
